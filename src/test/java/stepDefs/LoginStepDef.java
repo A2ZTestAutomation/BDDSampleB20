@@ -65,6 +65,7 @@ public class LoginStepDef {
 			driver.findElement(By.name("username")).sendKeys(data.get(0).get("username"));
 			driver.findElement(By.name("password")).sendKeys(data.get(0).get("password"));
 			driver.findElement(By.cssSelector(".radius")).click();
+			System.out.println("Submitted Login cred");
 		}
 		
 		
