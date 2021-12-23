@@ -61,6 +61,7 @@ public class LoginStepDef {
 			//record1 - username, pwd
 			// get(0) - get(0), get(1) 
 			//record2 - username, pwd
+			System.out.println("Got data from DataTable");
 			driver.findElement(By.name("username")).sendKeys(data.get(0).get("username"));
 			driver.findElement(By.name("password")).sendKeys(data.get(0).get("password"));
 			driver.findElement(By.cssSelector(".radius")).click();
